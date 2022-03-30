@@ -1,0 +1,97 @@
+﻿﻿@using OnlineShop.Common;
+@{
+    var user = (UserLogin)Session[CommonConstants.USER_SESSION];
+    var cookiesUserName = Request.Cookies["username"];
+    var cookiesPassword = Request.Cookies["password"];
+}
+@using Model.Dao;
+<style>
+    .header-top {
+        background-color: #fff;
+        padding: 0px 24px;
+    }
+
+
+        .header-top .navbar-inner {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+            .header-top .navbar-inner .bg-light {
+                background-color: transparent !important;
+            }
+
+            .header-top .navbar-inner .agileits-navi_search {
+                display: none;
+            }
+
+    .logo_agile h1 a img {
+        position: unset !important;
+    }
+
+    .logo_agile {
+        padding: 0px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .navbar-inner-top {
+        background-color: transparent;
+    }
+</style>
+<div class="header-top d-flex justify-content-between align-items-center">
+    <div class="logo_agile">
+        <h1 class="text-center">
+            <a href="/" class="font-weight-bold font-italic">
+                <img src="/Assets/Client/images/mylogo3.png" alt=" " class="img-fluid"> Smart Shop
+            </a>
+        </h1>
+    </div>
+    <div class="navbar-inner">
+        @Html.Action("NavBarInner", "Home", new { @class = "navbar-inner-top" })
+    </div>
+    <!-- header lists -->
+    <ul class="d-flex align-items-center d-flex">
+        @if (user == null && cookiesUserName == null)
+        {
+
+            <li class="text-center mr-3">
+                <i class="fas fa-sign-in-alt mr-2"></i>
+                @Html.ActionLink("Login", "Login", "User", null, new { @style = "color: #000000;" })
+            </li>
+            <li class="border-right"></li>
+            <li class="text-center text-dark" style="color: #000000 !important">
+                <i class="fas fa-sign-out-alt mr-2"></i> @Html.ActionLink("Register", "Register", "User", null, new { @style = "color: #000000;" })
+            </li>
+        }
+        else
+        {
+            if (user != null)
+            {
+                <li class="text-center text-dark mr-3">
+                    <img src="@user.Avatar" width="10">
+                    Welcome @user.UserName
+                </li>
+                <li class="border-right"></li>
+                <li class="text-center text-dark" style="color: #000000 !important">
+                    <a href="#" data-toggle="modal" data-target="# " class="text-dark">
+                        <i class="fas fa-sign-out-alt mr-2"></i> @Html.ActionLink("Logout", "Logout", "User", null, new { @style = "color: #000000;" })
+                    </a>
+                </li>
+            }
+            else if (cookiesUserName != null)
+            {
+                var userIn4 = new UserDao().GetById(cookiesUserName.Value);
+                <li class="text-center border-right mr-3">
+                    <img src="@userIn4.Avatar" width="10">
+                    Welcome @userIn4.UserName
+                </li>
+                <li class="text-center text-dark" style="color: #000000 !important">
+                    <i class="fas fa-sign-out-alt mr-2"></i> @Html.ActionLink("Logout", "Logout", "User", null, new { @style = "color: #000000;" })
+                </li>
+            }
+        }
+    </ul>
+</div>

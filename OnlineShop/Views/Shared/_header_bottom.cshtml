@@ -1,0 +1,60 @@
+﻿@model List<OnlineShop.Models.CartItem>
+
+<style>
+    .header-bot {
+        background-color: #e9ebee;
+        padding: 10px 0px;
+    }
+
+    .navbar-inner-header-bottom {
+    }
+
+        .navbar-inner-header-bottom.navbar-inner {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+            .navbar-inner-header-bottom.navbar-inner .bg-light {
+                background-color: transparent !important;
+            }
+
+            .navbar-inner-header-bottom.navbar-inner ul {
+                display: none;
+            }
+
+        .navbar-inner-header-bottom #agileinfo-nav_search {
+            width: 200px;
+            background-color: #fff;
+            border: 2px solid #bbbbbb;
+        }
+</style>
+<div class="container">
+    <div class="row header-bot_inner_wthreeinfo_header_mid d-flex align-items-center w-100 justify-content-center header-bottom">
+        <div class="header mb-md-0 mb-4">
+            <div class="d-flex justify-content-center align-items-center">
+               
+                <!-- search -->
+                <div class="col-10 agileits_search">
+                    <form class="form-inline" action="/Product/Search" method="get">
+                        <input value="@(Request.QueryString["keyword"])" name="keyword" class="form-control mr-sm-2" id="txtKeyword" type="search" placeholder="Search" aria-label="Search" required>
+                        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- cart details -->
+                <div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
+                    <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                        <form action="/gio-hang" method="post" class="last">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="display" value="1">
+                            <span id="cartSize">@Model.Count </span>
+                            <button class="btn w3view-cart" type="submit" name="submit" value="">
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- //cart details -->
+            </div>
+        </div>
+    </div>
+</div>

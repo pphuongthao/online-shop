@@ -1,0 +1,209 @@
+﻿<style>
+    #productsSearch {
+        border: 1px solid #bbbbbb;
+    }
+</style>
+<div class="col-lg-3 mt-lg-0 mt-4 p-lg-0">
+    <div class="side-bar p-sm-4 p-3">
+        <div class="search-hotel border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">Search..</h3>
+            <input id="productsSearch" class="w-100" type="search" placeholder="Name Product..." name="search" required="">
+            <button id="btnSearch" class="btn btn-secondary mt-2" type="submit" value=" "><i class="fas fa-search"></i>Search</button>
+        </div>
+
+        <div class="search-hotel border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">Price</h3>
+            <div class="w3l-range">
+                <ul>
+                    <li>
+                        <a class="price-filtering" href="#" data-price="0:@Int32.MaxValue">All</a>
+                    </li>
+                    <li>
+                        <a class="price-filtering" href="#" data-price="0:1">Less than 1 Million</a>
+                    </li>
+                    <li class="my-1">
+                        <a class="price-filtering" href="#" data-price="1:5">From 1 to 5 Million</a>
+                    </li>
+                    <li>
+                        <a class="price-filtering" href="#" data-price="5:10">From 5 to 10 Million</a>
+                    </li>
+                    <li class="my-1">
+                        <a class="price-filtering" href="#" data-price="10:20">From 10 to 20 Million</a>
+                    </li>
+                    <li class="mt-1">
+                        <a class="price-filtering" data-price="20:@Int32.MaxValue" href="#">Over 20 Million</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //price -->
+        <!-- discounts -->
+        <div class="left-side border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">Discount</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">5% or More</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">10% or More</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">20% or More</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">30% or More</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">50% or More</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">60% or More</span>
+                </li>
+            </ul>
+        </div>
+      
+        <!-- electronics -->
+        <div class="left-side border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">Phone</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">iPhone</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">SamSung</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Xiaomi</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Vivo</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Vsmart</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Nokia</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">CAT</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">ASUS</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">OPPO</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Oneplus</span>
+                </li>
+            </ul>
+        </div>
+        <!-- //electronics -->
+        <!-- delivery -->
+        <div class="left-side border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">Cash On Delivery</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Eligible for Cash On Delivery</span>
+                </li>
+            </ul>
+        </div>
+        <!-- //delivery -->
+        <!-- arrivals -->
+        <div class="left-side border-bottom py-2">
+            <h3 class="agileits-sear-head mb-3">New Arrivals</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Last 30 days</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="checked">
+                    <span class="span">Last 90 days</span>
+                </li>
+            </ul>
+        </div>
+        <!-- //arrivals -->
+        <!-- best seller -->
+        <div class="f-grid py-2">
+            <h3 class="agileits-sear-head mb-3">Best Seller</h3>
+            <div class="box-scroll">
+                <div class="scroll">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/ssg22.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">Samsung Galaxy S22 Ultra </a>
+                            <a href="" class="price-mar mt-2">28990000</a>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/ip128.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">iPhone 13 Pro 128GB</a>
+                            <a href="" class="price-mar mt-2">27390000</a>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/ip12.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">iPhone 12 mini 128GB</a>
+                            <a href="" class="price-mar mt-2">15500000 </a>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/mi11lite.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">Xiaomi Mi 11 Lite 5G</a>
+                            <a href="" class="price-mar mt-2">7790000 </a>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/asus.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">ASUS ROG Phone 2 512GB</a>
+                            <a href="" class="price-mar mt-2">20490000 </a>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-3 col-sm-2 col-3 left-mar">
+                            <img src="/Assets/Client_old/images/oppo.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+                            <a href="">OPPO A95</a>
+                            <a href="" class="price-mar mt-2">6290000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //best seller -->
+    </div>
+    <!-- //product right -->
+</div>
