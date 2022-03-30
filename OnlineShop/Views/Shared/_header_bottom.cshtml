@@ -27,26 +27,29 @@
             background-color: #fff;
             border: 2px solid #bbbbbb;
         }
+
+    #txtKeyword {
+        width: 40vw;
+    }
 </style>
 <div class="container">
-    <div class="row header-bot_inner_wthreeinfo_header_mid d-flex align-items-center w-100 justify-content-center header-bottom">
-        <div class="header mb-md-0 mb-4">
-            <div class="d-flex justify-content-center align-items-center">
-               
+    <div class="row header-bot_inner_wthreeinfo_header_mid d-flex align-items-center w-100 justify-content-between header-bottom">
+        <div class="header mb-md-0 mb-4 w-100">
+            <div class="d-flex justify-content-between align-items-center w-100">
+
                 <!-- search -->
-                <div class="col-10 agileits_search">
-                    <form class="form-inline" action="/Product/Search" method="get">
-                        <input value="@(Request.QueryString["keyword"])" name="keyword" class="form-control mr-sm-2" id="txtKeyword" type="search" placeholder="Search" aria-label="Search" required>
-                        <button class="btn my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+                <form class="form-inline col-10" action="/Product/Search" method="get">
+                    <input value="@(Request.QueryString["keyword"])" name="keyword" class="form-control mr-sm-2" id="txtKeyword" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
                 <!-- cart details -->
-                <div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
+                <div class="col-2 top_nav_right d-flex align-items-center text-center mt-sm-0 mt-2">
                     <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                        <form action="/gio-hang" method="post" class="last">
+                        <form action="/gio-hang" method="post" class="last d-flex align-items-center">
                             <input type="hidden" name="cmd" value="_cart">
                             <input type="hidden" name="display" value="1">
-                            <span id="cartSize">@Model.Count </span>
+                            <span id="cartSize" class="mr-2">@Model.Count </span>
                             <button class="btn w3view-cart" type="submit" name="submit" value="">
                                 <i class="fas fa-cart-arrow-down"></i>
                             </button>

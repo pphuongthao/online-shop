@@ -65,7 +65,7 @@
                                                     <a href="/chi-tiet/@item.MetaTitle-@item.ID">@item.Name</a>
                                                 </h4>
                                                 <div class="info-product-price my-2">
-                                                     @{
+                                                    @{
                                                         var price = "";
                                                         var promotionPrice = "";
                                                         if (item.Price.HasValue)
@@ -108,7 +108,8 @@
         }
         else
         {
-            <span>No Product</span>
+            <span class="border-right">No Product Founded</span>
+            <a href="/san-pham">See all product</a>
         }
     </div>
 </div>

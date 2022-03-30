@@ -38,6 +38,11 @@
         text-align: center;
         font-weight: 700;
     }
+
+    .form-horizontal {
+        width: 35vw;
+        min-width: 100px;
+    }
 </style>
 <div class="content">
     @using (Html.BeginForm("Login", "User", FormMethod.Post))
@@ -68,7 +73,7 @@
             </div>
 
             <div class="form-group">
-                <div class="bottom-btn">
+                <div class="bottom-btn text-center">
                     <input type="submit" value="Login" class="btn btn-default" />
                     <a href="/User/LoginFacebook"><i class="fa fa-facebook-square">Login with Facebook</i></a>
                 </div>

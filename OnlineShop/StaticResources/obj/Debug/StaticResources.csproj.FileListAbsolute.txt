@@ -129,3 +129,14 @@ D:\Ky2-III\LapTrinhWeb\BAITAPLON\OnlineShop\OnlineShop\StaticResources\obj\Debug
 D:\Ky2-III\LapTrinhWeb\BAITAPLON\OnlineShop\OnlineShop\StaticResources\obj\Debug\en\StaticResources.resources.dll
 D:\Ky2-III\LapTrinhWeb\BAITAPLON\OnlineShop\OnlineShop\StaticResources\obj\Debug\StaticResources.dll
 D:\Ky2-III\LapTrinhWeb\BAITAPLON\OnlineShop\OnlineShop\StaticResources\obj\Debug\StaticResources.pdb
+D:\New folder\online-shop\OnlineShop\StaticResources\bin\Debug\StaticResources.dll
+D:\New folder\online-shop\OnlineShop\StaticResources\bin\Debug\StaticResources.pdb
+D:\New folder\online-shop\OnlineShop\StaticResources\bin\Debug\en\StaticResources.resources.dll
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.csproj.AssemblyReference.cache
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.Resources.resources
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.Resources.en.resources
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.csproj.GenerateResource.cache
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.csproj.CoreCompileInputs.cache
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\en\StaticResources.resources.dll
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.dll
+D:\New folder\online-shop\OnlineShop\StaticResources\obj\Debug\StaticResources.pdb

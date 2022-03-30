@@ -668,8 +668,8 @@
     <!-- //header-bottom -->
     <!-- navigation -->
     @*<div class="navbar-inner">
-        @Html.Action("NavBarInner", "Home")
-    </div>*@
+            @Html.Action("NavBarInner", "Home")
+        </div>*@
     <!-- //navigation -->
     <!-- banner -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -704,6 +704,7 @@
         @Html.Partial("_copyright")
 
     </div>
+
     <!-- //copyright -->
     <!-- js-files -->
     <!-- jquery -->
@@ -735,13 +736,7 @@
     <!-- //end-smooth-scrolling -->
     <!-- smooth-scrolling-of-move-up -->
     <script>
-           $(function () {
-               $("#agileinfo-nav_search").change(function () {
-                    var selectedItem = $("#agileinfo-nav_search option:selected").attr("id");
-                    var metatitle = $("#agileinfo-nav_search option:selected").attr("value");
-                    var redirectURL = '@Url.Action("Category","Product")';
-                    window.location.href = "/san-pham/" + metatitle + "-" + selectedItem;
-                });
+        $(function () {
                 //add to cart
                 $('.btnaddtocart').on('click', function (e) {
                     e.preventDefault();
@@ -765,6 +760,7 @@
                         }
                     });
                 });
+
                 // searching products by name
                 $('#productsSearch').on('keyup', function () {
                     var searchContent = $(this).val().trim().toLowerCase();
@@ -781,26 +777,6 @@
                         }
                     });
                 });
-
-               // searching products by name
-               //$('#btnSearch').on('click', function (e) {
-               //    e.preventDefault();
-               //    const searchContent = $("#productsSearch").val().trim().toLowerCase();
-               //    $.ajax({
-               //        url: '/Product/Search',
-               //        type: 'Post',
-               //        dataType: 'Json',
-               //        data: {
-               //            keyword: searchContent,
-               //        },
-               //        success: function (res) {
-               //            if (res.status == true) {
-               //                toastr.success(res.message, "Thông báo", { timeOut: 3000, "closeButton": true });
-               //                cartSize.text(parseInt(cartSize.text()) + 1);
-               //            }
-               //        }
-               //    });
-               //});
 
 
                 //product  by price filtering
@@ -844,6 +820,7 @@
     <script src="/Assets/Client/js/easyResponsiveTabs.js"></script>
 
     @RenderSection("jsFooter", false);
+
     <!-- //for bootstrap working -->
     <!-- //js-files -->
     @RenderSection("Scripts", required: false)

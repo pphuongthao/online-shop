@@ -291,3 +291,24 @@ E:\Nam3\Ki_2\WEB\BTL\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CoreComp
 E:\Nam3\Ki_2\WEB\BTL\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
 E:\Nam3\Ki_2\WEB\BTL\OnlineShop\OnlineShop\Model\obj\Debug\Model.dll
 E:\Nam3\Ki_2\WEB\BTL\OnlineShop\OnlineShop\Model\obj\Debug\Model.pdb
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\Model.dll.config
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\Model.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\Model.pdb
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\Common.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\EntityFramework.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\PagedList.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\StaticResources.dll
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\Common.pdb
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\StaticResources.pdb
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\EntityFramework.xml
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\PagedList.xml
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+D:\New folder\online-shop\OnlineShop\Model\bin\Debug\en\StaticResources.resources.dll
+D:\New folder\online-shop\OnlineShop\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\New folder\online-shop\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\New folder\online-shop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
+D:\New folder\online-shop\OnlineShop\Model\obj\Debug\Model.dll
+D:\New folder\online-shop\OnlineShop\Model\obj\Debug\Model.pdb
